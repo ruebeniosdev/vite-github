@@ -37,7 +37,8 @@ jobs:
           node-version: 24
           cache: 'npm'
       - name: Install Dependencies
-        run: npm install
+        run:  cd vite-github 
+              npm install
       - name: Build
         run: npm run build
       - name: Setup Pages
